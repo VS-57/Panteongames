@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
-  productGUID: 307bc5ee8424bcb49a4257083daea186
+  productGUID: 4c5cd4526b290274db9ad5dc817d6e2f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -301,9 +301,9 @@ PlayerSettings:
     m_GraphicsJobs: 0
   m_BuildTargetGraphicsJobMode:
   - m_BuildTarget: PS4Player
-    m_GraphicsJobMode: -1850131154
+    m_GraphicsJobMode: -1888469714
   - m_BuildTarget: XboxOnePlayer
-    m_GraphicsJobMode: -1850131154
+    m_GraphicsJobMode: -1888469714
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
@@ -632,7 +632,6 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
     Collab: 1
-    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 

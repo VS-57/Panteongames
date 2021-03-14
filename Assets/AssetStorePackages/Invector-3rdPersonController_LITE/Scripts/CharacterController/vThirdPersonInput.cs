@@ -92,8 +92,8 @@ namespace Invector.vCharacterController
 
         public virtual void MoveInput()
         {
-            cc.input.x = Input.GetAxis(horizontalInput) + joystick.Horizontal;
-            cc.input.z = Input.GetAxis(verticallInput) + joystick.Vertical;
+            cc.input.x = Input.GetAxis(horizontalInput) + (joystick.Horizontal * 2);
+            cc.input.z = Input.GetAxis(verticallInput) + (joystick.Vertical * 2);
         }
 
         protected virtual void CameraInput()

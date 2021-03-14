@@ -5,11 +5,13 @@ using System.Linq;
 
 public class FinisherScript : MonoBehaviour
 {
-    public GameObject Plane;
     public GameObject Controller;
+    public GameObject DynCanva;
     public GameObject Camera2;
     public GameObject[] members;
+
     public int currentposition;
+
     public Dictionary<GameObject,float> distlist = new Dictionary<GameObject, float>();
     public TMPro.TextMeshProUGUI position;
 
@@ -19,11 +21,8 @@ public class FinisherScript : MonoBehaviour
        if (col.gameObject.tag == ("Player")){
 
            Camera2.SetActive(true);
-           Debug.Log("Finish Line");
-           Plane.SetActive(true);
-                
+           DynCanva.SetActive(true);
            Controller.SetActive(false);
-                
            Destroy(Camera.main);
            Destroy(col.gameObject);
        }
@@ -33,6 +32,8 @@ public class FinisherScript : MonoBehaviour
     {
         positionUI();
     }
+
+
 
     public void positionUI() // Pozisyon sıralamasını tutuyor
     {
