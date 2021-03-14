@@ -5,17 +5,24 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AI
     - CameraScript
+    - ColorSelector
     - DynamicJoystick
     - FinisherScript
+    - FixedJoystick
+    - GUIManager
     - Invector.vCharacterController.vThirdPersonController
     - Invector.vCharacterController.vThirdPersonInput
+    - ModelViewControls
     - PaintPanel
     - PlatformSet
+    - TexturePainter
     - Waypoints
     - gameUI
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshModifier
     - UnityEngine.AI.NavMeshSurface
+    NavMeshComponentsEditor.dll:
+    - UnityEditor.AI.NavMeshAssetManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -38,6 +45,7 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.EventSystems.TouchInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
@@ -74,6 +82,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -86,54 +96,68 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11286}
+      Script: {instanceID: 11288}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11324}
     - Class: 114
-      Script: {instanceID: 11456}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11856}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12452}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12566}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 13422}
+      Script: {instanceID: 12458}
     - Class: 114
-      Script: {instanceID: 13438}
+      Script: {instanceID: 12572}
     - Class: 114
-      Script: {instanceID: 13476}
+      Script: {instanceID: 13076}
     - Class: 114
-      Script: {instanceID: 13512}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13548}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13482}
     - Class: 114
-      Script: {instanceID: 13836}
+      Script: {instanceID: 13518}
     - Class: 114
-      Script: {instanceID: 13904}
+      Script: {instanceID: 13538}
     - Class: 114
-      Script: {instanceID: 14190}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 14342}
+      Script: {instanceID: 13752}
     - Class: 114
-      Script: {instanceID: 14418}
+      Script: {instanceID: 13804}
     - Class: 114
-      Script: {instanceID: 14456}
+      Script: {instanceID: 13846}
     - Class: 114
-      Script: {instanceID: 14520}
+      Script: {instanceID: 13914}
+    - Class: 114
+      Script: {instanceID: 14200}
+    - Class: 114
+      Script: {instanceID: 14236}
+    - Class: 114
+      Script: {instanceID: 14352}
+    - Class: 114
+      Script: {instanceID: 14428}
+    - Class: 114
+      Script: {instanceID: 14466}
+    - Class: 114
+      Script: {instanceID: 14530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -149,6 +173,8 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -335,7 +361,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 0d1fbaec8eea8ae66ea900b8f6a3e267
+      Hash: 29555353fa79e3216b1c4a8a25099cca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FinisherScript
@@ -357,6 +383,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 890494964803472aa87f7f9281cce144
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ModelViewControls
   - hash:
       serializedVersion: 2
       Hash: 663ee71987357c2869b08012cec786c2
@@ -465,6 +497,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ML-Agents.dll
     namespaceName: Unity.MLAgents.Sensors
     className: RenderTextureSensorComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 2787a6010ae862e95d4636472cc64b92
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorSelector
   - hash:
       serializedVersion: 2
       Hash: e6f0efd0e20669d577e9d21526b3d3f9
@@ -845,6 +883,12 @@ ScriptsOnlyBuild:
     className: BehaviorParameters
   - hash:
       serializedVersion: 2
+      Hash: 648efde20d20b9e46890ca864fbed1ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GUIManager
+  - hash:
+      serializedVersion: 2
       Hash: 1aa3c1056d70edf15fdd22dc9270d47e
     assemblyName: Unity.Animation.Rigging.dll
     namespaceName: UnityEngine.Animations.Rigging
@@ -885,6 +929,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_B
+  - hash:
+      serializedVersion: 2
+      Hash: 046f56df15021b98e96ac77f062fab84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TexturePainter
   - hash:
       serializedVersion: 2
       Hash: 8c6e48ab23009638149489605a7da0ba
